@@ -5,9 +5,79 @@ html {
 body {
     background: url('/media/homepage_image.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(120vh - 164px);
     color: whitesmoke;
     font-family: 'Lato';
+}
+
+
+@-webkit-keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ticker-wrap {
+    position: fixed;
+    z-index: 2000;
+    margin-top: 125px;
+    width: 100%;
+    overflow: hidden;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-left: 100%;
+    box-sizing: content-box;
+}
+
+.ticker-wrap .ticker__item {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.ticker-wrap .ticker__item {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.ticker-wrap .ticker {
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 40s;
+    animation-duration: 40s;
 }
 
 /* from Bulma */
@@ -27,7 +97,7 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
+.join-today-button {
     background: black;
     color: white;
     min-width: 260px;
@@ -38,9 +108,9 @@ body {
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.join-today-button:hover,
+.join-today-button:active,
+.join-today-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -49,7 +119,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #3604e9 !important;
 }
 
 .border-black {
@@ -79,3 +149,4 @@ body {
         padding-top: 164px;
     }
 }
+
