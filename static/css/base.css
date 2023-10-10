@@ -1,7 +1,9 @@
 html {
     height: 100%;
 }
-
+header {
+    padding: 25px;
+}
 body {
     background: url('/media/homepage_image.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -40,7 +42,7 @@ body {
 .ticker-wrap {
     position: fixed;
     z-index: 2000;
-    margin-top: 125px;
+    margin-top: 0;
     width: 100%;
     overflow: hidden;
     height: 2rem;
@@ -124,6 +126,20 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.bg-black {
+     background: #000;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
