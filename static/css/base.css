@@ -110,6 +110,11 @@ body {
     color: white;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
 .join-today-button:hover,
 .join-today-button:active,
 .join-today-button:focus,
