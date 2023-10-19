@@ -101,6 +101,8 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'wings_gym.wsgi.application'
 
 
+
+
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -111,7 +113,7 @@ DATABASES = {
     }
 }
 
-
+APPEND_SLASH=False
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
