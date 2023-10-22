@@ -1,1 +1,1 @@
-web: gunicorn wings-gym.wsgi:application
+web: gunicorn wings_gym.wsgi:application
