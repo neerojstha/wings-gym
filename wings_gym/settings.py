@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['wingsgym.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['wingsgym-20a4a87d8885.herokuapp.com', 'localhost']
 
 
 # Application definition
