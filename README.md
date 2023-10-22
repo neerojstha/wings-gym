@@ -1,3 +1,86 @@
+
+# Wings Gym Project
+
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [UX Design](#ux-design)
+6. [Contributing](#contributing)
+7. [Reference](#reference)
+
+## Project Overview
+
+The Wings Gym Project is a web application designed for managing gym memberships, scheduling classes, and facilitating fitness-related activities. This README file provides essential information about the project, including features, installation instructions, and UX design considerations.
+
+## Features
+
+- **User Authentication**: Users can create accounts, log in, and manage their profiles.
+- **Membership Management**: Members can purchase gym memberships and receive access to gym facilities.
+- **Class Scheduling**: Users can schedule fitness classes and events.
+- **E-commerce**: The platform offers fitness equipment and merchandise for sale.
+- **Order Processing**: Integration with payment gateways for processing orders.
+- **Profile Management**: Users can view and edit their profile information.
+- **Order History**: Track order history and membership purchases.
+
+## Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/wings-gym.git
+   ```
+
+2. Create a virtual environment:
+
+   ```bash
+   python -m venv venv
+   ```
+
+3. Activate the virtual environment:
+
+   - On Windows:
+
+     ```bash
+     venv\Scripts\activate
+     ```
+
+   - On macOS and Linux:
+
+     ```bash
+     source venv/bin/activate
+     ```
+
+4. Install project dependencies:
+
+   ```bash
+   pip3 install -r requirements.txt
+   ```
+
+5. Migrate the database:
+
+   ```bash
+   python3 manage.py migrate
+   ```
+
+6. Start the development server:
+
+   ```bash
+   python3 manage.py runserver
+   ```
+
+7. Access the application in your web browser at http://localhost:8000.
+
+## Usage
+
+1. Create an account or log in.
+2. Explore the available features, such as membership purchase, class scheduling, and product ordering.
+3. Manage your profile and view your order history.
+4. Enjoy your fitness journey with Wings Gym!
+
+## UX Design
+
 Designing the front-end user experience (UX) for your fitness subscription application is crucial for attracting and retaining users. Here's a high-level outline of how you can structure the UX design for the project:
 
 **1. Landing Page:**
@@ -59,3 +142,22 @@ Designing the front-end user experience (UX) for your fitness subscription appli
    - Optimize the application's performance to ensure fast loading times and smooth user interactions.
 
 Remember that the key to a successful front-end UX design is to keep it user-centric, intuitive, and visually appealing while aligning with the brand and goals of your fitness subscription application. Continuously gather user feedback and conduct usability testing to refine the design based on real user experiences.
+
+
+## Contributing
+
+We welcome contributions from the open-source community. If you would like to contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name`.
+3. Make your changes and commit them: `git commit -m 'Add a new feature'`.
+4. Push your branch to your fork: `git push origin feature/your-feature-name`.
+5. Create a pull request.
+
+## Reference
+
+This Project in inspired from Boutique Ado Project.
+My Mentor Lakhadeep help me to build this project.
+
+
+
