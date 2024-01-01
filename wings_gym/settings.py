@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['wingsgym-20a4a87d8885.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-neerojstha-wingsgym-4qslz1w0hdb.ws-eu107.gitpod.io', 'localhost']
 
 
 # Application definition
@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'profiles',
     
+    
     # other
     'storages'
     
@@ -59,6 +60,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
