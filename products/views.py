@@ -3,11 +3,24 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .forms import ProductForm
-from .models import Product, Category
+from .models import Product, Category, Post
 from django.contrib.auth.decorators import login_required
-from django.views import generic, View
-from .models import Post
+from django.views.generic import ListView
+from django.views import View
 # Create your views here.
+
+
+class PostList(ListView):
+    model = Post
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'index.html'
+    paginate_by = 6
+
+class PostDetail(View):
+    def get(self, request, slug, *args, **kwargs):
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
+        return render(request, "post_detail.html", {"post": post})
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -137,24 +150,7 @@ def delete_product(request, product_id):
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
 
-class PostList(generic.ListView):
-    model = Post
-    queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'index.html'
-    paginate_by = 12
 
-class PostDetail(View):
-    def get(self, request, slug, *args, **kwargs):
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-
-        return render(
-            request,
-            "post_detail.html",
-            {
-                "post": post,
-            },
-        )
 
 
 def help(request):
@@ -162,3 +158,9 @@ def help(request):
 
 def swimming(request):
     return render(request, 'swimming.html')
+
+def pilates(request):
+    return render(request, 'pilates.html')
+
+def function(request):
+    return render(request, 'function.html')

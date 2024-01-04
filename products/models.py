@@ -4,6 +4,23 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, 'Draft'), (1, 'Published'))
 
+class Post(models.Model):
+    title = models.CharField(max_length=210, unique=True)
+    slug = models.SlugField(max_length=210, unique=True)
+    image = models.ImageField(null=True, blank=True)
+    excerpt = models.TextField(blank=True)
+    content = models.TextField()
+    updated_on = models.DateTimeField(auto_now=True)
+    status = models.IntegerField(choices=STATUS, default=0)
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_on"]
+
+    def __str__(self):
+        return self.title
+
+
 class Category(models.Model):
 
     class Meta:
@@ -48,18 +65,3 @@ class NutritionPlan(models.Model):
 
 
 
-class Post(models.Model):
-    title = models.CharField(max_length=210, unique=True)
-    slug = models.SlugField(max_length=210, unique=True, default=False)
-    featured_image = CloudinaryField('image', default='placeholder')
-    excerpt = models.TextField(blank=True)
-    content = models.TextField()
-    updated_on = models.DateTimeField(auto_now=True)
-    status = models.IntegerField(choices=STATUS, default=0)
-    created_on = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        ordering = ["-created_on"]
-
-    def __str__(self):
-        return self.title

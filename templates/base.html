@@ -36,7 +36,7 @@
     {% block extra_js%}
     {% endblock %}
 
-    <title>Wings Gym {% block extra_title %}{% endblock %}</title>
+    <title>Wings Gym {% block head_title %}{% endblock head_title %}</title>
   </head>
   <body>
     <header class="container-fluid fixed-top">
@@ -168,5 +168,30 @@
             <i class="fab fa-instagram-square ms-3"></i>
             <i class="fab fa-youtube-square ms-3"></i></p>
     </footer>
+
+    <script>
+        // List of images
+        var images = [
+            '/media/homepage_image.jpg',
+            '/media/homepage_image5.jpg',
+            '/media/homepage_image4.jpg' // Add as many images as you want
+        ];
+        
+        // Current image index
+        var index = 0;
+        
+        // Function to change the background image
+        function changeBackground() {
+            document.body.style.backgroundImage = 'url(' + images[index] + ')';
+            index = (index + 1) % images.length; // Increment the index, and loop back to 0 if it reaches the length of the images array
+        }
+        
+        // Change background every 3 seconds
+        setInterval(changeBackground, 3000);
+        
+        // Initial call to set the first background
+        changeBackground();
+    </script>
+        
   </body>
 </html>

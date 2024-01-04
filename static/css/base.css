@@ -8,7 +8,7 @@ body {
     background: url('/media/homepage_image.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(120vh - 164px);
-    color: #495057;
+    color: #f4f2fc;
     font-family: 'Lato';
 }
 
@@ -100,6 +100,15 @@ a.category-badge > span.badge:hover {
 input[name='q']::placeholder {
     color: #aab7c4;
 }
+
+.navbar-nav .dropdown-menu a {
+    color: black !important; /* Overrides other styles */
+}
+
+.text-black {
+    color: black !important;
+}
+
 
 /* ------------------------------- bootstrap toasts */
 
