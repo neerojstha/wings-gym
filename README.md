@@ -143,7 +143,7 @@ Light house test performance, accessiblity, best practices and SEO.
 
 Debugging is an essential part of working with Cafe Soul. While we strive to create a smooth user experience, issues may arise from time to time. here are some steps took  diagnose and resolve issues:
 
-1. **Check Documentation**: Refer to the project's documentation or user guide for information on how to use and configure different features of Cafe Soul.
+1. **Check Documentation**: Refer to the project's documentation or user guide for information on how to use and configure different features of Wings Gym.
 
 2. **Inspect Error Messages**: whenever issues encounter, addressed them and resolved.
 
