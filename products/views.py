@@ -6,14 +6,14 @@ from .forms import ProductForm
 from .models import Product, Category, Post
 from django.contrib.auth.decorators import login_required
 from django.views.generic import ListView
-from django.views import View
+from django.views import generic, View
 # Create your views here.
 
 
 class PostList(ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'index.html'
+    template_name = 'point.html'
     paginate_by = 6
 
 class PostDetail(View):
