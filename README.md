@@ -1,7 +1,7 @@
 
 
 # Wings Gym Website
-![Alt Text](media/webpage.jpg)
+![Alt Text](media/frontpage.jpg)
 
 
 
@@ -20,18 +20,41 @@
 
 ## Description
 
-Wings Gym Website is a modern and user-friendly platform for showcasing the offerings and Packages of Cafe Soul. It aims to provide an attractive online presence for the gym, allowing members to explore the membership, make appointments, and get in touch with the cafe. Additionally, the posts on the website are there to inform customers about the diverse array of foods and coffee, helping them make informed choices and enticing them to visit the cafe to savor the delicious offerings.
+
+When creating a description for the "Wings Gym" on a profile page, you want to emphasize its unique features, atmosphere, and the benefits it offers to members. Here's a potential description you might use or adapt:
+
+Welcome to Wings Gym: Your Launchpad to Fitness!
+
+At Wings Gym, we believe in soaring beyond limits. Our state-of-the-art facility is not just a gym; it's a community where each member is encouraged to push boundaries and achieve their personal best. Here's what makes us unique:
+
+Innovative Equipment: From resistance machines to free weights, cardio zones, and functional training areas, our equipment is cutting-edge and well-maintained, ensuring a safe and effective workout every time.
+
+Diverse Classes: Dive into our wide range of classes, including yoga, pilates, Zumba, spin, and HIIT, led by certified instructors passionate about your fitness.
+
+Personal Training: Our experienced trainers are here to craft personalized workout plans that align with your goals, whether you're looking to build muscle, lose weight, or improve overall fitness.
+
+Nutritional Guidance: Understanding that fitness goes beyond the gym, we offer nutritional counseling to complement your workout regime.
+
+Welcoming Community: Wings Gym is more than a place to work out; it's a supportive community. Join fellow members in challenges, social events, and more.
+
+Spa & Recovery: After a hard workout, relax and rejuvenate with our on-site spa services, including massages, saunas, and steam rooms.
+
+Flexible Membership: Choose a plan that fits your lifestyle, with no long-term commitments or hidden fees.
+
+Your Fitness Journey Begins Here!
+
+Whether you're a beginner or a seasoned athlete, Wings Gym is your destination for personal growth and community. Visit us to experience a facility that helps you spread your wings and fly towards your fitness aspirations.
 
 ## Features
 
 - Responsive design for seamless user experience on various devices.
 - Eye-catching hero section with a call-to-action button.
-- Informative about section that introduces Cafe Soul's story and vision.
-- Menu section to display a range of delectable menu items with images and prices.
-- Booking section to book table, see booking time, edit booking time and people and delete booking.
+- Users should find what they're looking for quickly, without confusion or excessive clicks.
+- Typical sections include About Us, Services, Class Schedule, Membership Information, Contact, and perhaps a Blog or News section.
+- Information on the equipment and amenities available.
 - Contact section with a contact form and essential contact details.
 - Sticky navigation bar for easy access to different sections of the website.
-- Social media integration for easy access to Cafe Soul's social media profiles.
+- The website should be accessible and functional on various devices, including desktops, tablets, and smartphones.
 
 ## User
 
@@ -71,11 +94,11 @@ A live demo of the Cafe Soul Website is available at https://cafe-booking-4d8e2d
 
 - HTML checker
 used w3 validator to check error and No error or warning shows.
-![Alt Text](media/htmlchecker.jpg)
+![Alt Text](media/htmlcheckergym.jpg)
 
 - CSS checker
 Used w3 jigsaw css checker and passed without error.
-![Alt Text](media/cssvalidation.png)
+![Alt Text](media/cssvalidatorgym.jpg)
 
 - Lighthouse Test
 Light house test performance, accessiblity, best practices and SEO.
