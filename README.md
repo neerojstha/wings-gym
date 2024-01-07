@@ -1,163 +1,165 @@
 
-# Wings Gym Project
+
+# Wings Gym Website
+![Alt Text](media/webpage.jpg)
+
+
 
 ## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [UX Design](#ux-design)
-6. [Contributing](#contributing)
-7. [Reference](#reference)
 
-## Project Overview
+- [Description](#description)
+- [Features](#features)
+- [User](#user)
+- [Demo](#demo)
+- [Testing](#testing)
+- [Django administration login](#admin)
+- [Debug](#debug)
+- [Deployment](#deployment)
+- [Additional Notes or Future Improvements](#additional)
+- [Credits](#credits)
 
-The Wings Gym Project is a web application designed for managing gym memberships, scheduling classes, and facilitating fitness-related activities. This README file provides essential information about the project, including features, installation instructions, and UX design considerations.
+## Description
+
+Wings Gym Website is a modern and user-friendly platform for showcasing the offerings and Packages of Cafe Soul. It aims to provide an attractive online presence for the gym, allowing members to explore the membership, make appointments, and get in touch with the cafe. Additionally, the posts on the website are there to inform customers about the diverse array of foods and coffee, helping them make informed choices and enticing them to visit the cafe to savor the delicious offerings.
 
 ## Features
 
-- **User Authentication**: Users can create accounts, log in, and manage their profiles.
-- **Membership Management**: Members can purchase gym memberships and receive access to gym facilities.
-- **Class Scheduling**: Users can schedule fitness classes and events.
-- **E-commerce**: The platform offers fitness equipment and merchandise for sale.
-- **Order Processing**: Integration with payment gateways for processing orders.
-- **Profile Management**: Users can view and edit their profile information.
-- **Order History**: Track order history and membership purchases.
+- Responsive design for seamless user experience on various devices.
+- Eye-catching hero section with a call-to-action button.
+- Informative about section that introduces Cafe Soul's story and vision.
+- Menu section to display a range of delectable menu items with images and prices.
+- Booking section to book table, see booking time, edit booking time and people and delete booking.
+- Contact section with a contact form and essential contact details.
+- Sticky navigation bar for easy access to different sections of the website.
+- Social media integration for easy access to Cafe Soul's social media profiles.
 
-## Installation
+## User
 
-1. Clone the repository to your local machine:
+- Signup
+user need signup account to modify, view and delete booking.
+![Alt Text](media/signup.jpg)
 
-   ```bash
-   git clone https://github.com/your-username/wings-gym.git
-   ```
+- Signin
+User can view, modify and delete booking after signin.
+![Alt Text](media/signin.jpg)
 
-2. Create a virtual environment:
+- Create Booking
+User can create a booking directly through by clicking nav button without login.
+![Alt Text](media/createbooking.jpg)
 
-   ```bash
-   python -m venv venv
-   ```
+- Edit Booking
+User can edit booking according user need just to login website with username and password.
+![Alt Text](media/usereditbooking.jpg)
 
-3. Activate the virtual environment:
+- Delete Booking
+User can delete booking after login website.
+![Alt Text](media/deletebooking.jpg)
 
-   - On Windows:
+- No Booking
+After log in if user don't have booking, system will shows no booking on the screen.
+![Alt Text](media/nobooking.jpg)
 
-     ```bash
-     venv\Scripts\activate
-     ```
+-Superuser
+Admin or superuser can create, read, edit and delete booking after login. Superuser can see all the booking list after clciking your booking nav button and can modify according to customer request.
+![Alt Text](media/superuseredit.jpg)
+## Demo
 
-   - On macOS and Linux:
-
-     ```bash
-     source venv/bin/activate
-     ```
-
-4. Install project dependencies:
-
-   ```bash
-   pip3 install -r requirements.txt
-   ```
-
-5. Migrate the database:
-
-   ```bash
-   python3 manage.py migrate
-   ```
-
-6. Start the development server:
-
-   ```bash
-   python3 manage.py runserver
-   ```
-
-7. Access the application in your web browser at http://localhost:8000.
-
-## Usage
-
-1. Create an account or log in.
-2. Explore the available features, such as membership purchase, class scheduling, and product ordering.
-3. Manage your profile and view your order history.
-4. Enjoy your fitness journey with Wings Gym!
-
-## UX Design
-
-Designing the front-end user experience (UX) for your fitness subscription application is crucial for attracting and retaining users. Here's a high-level outline of how you can structure the UX design for the project:
-
-**1. Landing Page:**
-   - A visually appealing landing page with high-quality images of fitness enthusiasts, workout equipment, and healthy meals.
-   - A clear and concise headline explaining the purpose of the application.
-   - A call-to-action (CTA) button to encourage visitors to sign up or learn more about the platform.
-   - Navigation menu with links to essential sections like Home, Plans, Merchandise, Community, and Blog.
-
-**2. User Registration and Onboarding:**
-   - A user-friendly registration form that collects essential information such as name, email, and password.
-   - An option to sign up using social media accounts for convenience.
-   - A brief onboarding process to help users set fitness goals and preferences.
-
-**3. User Profile:**
-   - A personalized user profile page where users can upload a profile picture and provide information about themselves.
-   - Sections to input fitness goals, dietary preferences, and fitness level.
-   - A dashboard that displays user progress, subscriptions, and achievements.
-
-**4. Fitness Plans and Merchandise:**
-   - Dedicated sections for fitness plans, nutrition plans, and merchandise.
-   - Clear and enticing product listings with images, descriptions, and prices.
-   - Filters and sorting options to help users find the right plans or products.
-   - A shopping cart that displays selected items and allows for easy checkout.
-
-**5. Community and Social Features:**
-   - A community forum with categories for different fitness topics.
-   - User-generated content such as success stories, progress updates, and reviews.
-   - A user-friendly messaging system for private communication among users.
-   - User profiles should prominently display achievements and activity within the community.
-
-**6. Subscription Management:**
-   - An intuitive interface for managing subscriptions, including upgrade, downgrade, or cancellation options.
-   - Clear information about subscription benefits, pricing, and renewal dates.
-
-**7. Blog and Content Section:**
-   - A blog section with informative articles on fitness, nutrition, and wellness.
-   - User-friendly navigation for browsing and searching articles.
-   - A commenting system to encourage user engagement.
-
-**8. Search and Navigation:**
-   - A robust search functionality to find specific fitness plans, merchandise, or community posts.
-   - A consistent and easy-to-navigate menu structure for quick access to all sections of the platform.
-
-**9. Responsive Design:**
-   - Ensure that the application is responsive, providing an optimal viewing experience across various devices, including desktops, tablets, and mobile phones.
-
-**10. Visual Design:**
-   - Use a modern and clean design with a color scheme that aligns with fitness and wellness themes.
-   - Use high-quality images and icons to enhance the visual appeal of the platform.
-
-**11. Feedback and Notifications:**
-   - Implement user-friendly feedback mechanisms, such as confirmation messages, alerts, and notifications, to keep users informed about their actions and updates.
-
-**12. Accessibility and Usability:**
-   - Ensure that the application is accessible to users with disabilities by following web accessibility guidelines (WCAG).
-   - Conduct usability testing to identify and address any usability issues.
-
-**13. Performance Optimization:**
-   - Optimize the application's performance to ensure fast loading times and smooth user interactions.
-
-Remember that the key to a successful front-end UX design is to keep it user-centric, intuitive, and visually appealing while aligning with the brand and goals of your fitness subscription application. Continuously gather user feedback and conduct usability testing to refine the design based on real user experiences.
+A live demo of the Cafe Soul Website is available at https://cafe-booking-4d8e2d880209.herokuapp.com/.
 
 
-## Contributing
+## Tesing
 
-We welcome contributions from the open-source community. If you would like to contribute to the project, please follow these steps:
+- HTML checker
+used w3 validator to check error and No error or warning shows.
+![Alt Text](media/htmlchecker.jpg)
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name`.
-3. Make your changes and commit them: `git commit -m 'Add a new feature'`.
-4. Push your branch to your fork: `git push origin feature/your-feature-name`.
-5. Create a pull request.
+- CSS checker
+Used w3 jigsaw css checker and passed without error.
+![Alt Text](media/cssvalidation.png)
 
-## Reference
-
-This Project in inspired from Boutique Ado Project.
-My Mentor Lakhadeep help me to build this project.
+- Lighthouse Test
+Light house test performance, accessiblity, best practices and SEO.
+![Alt Text](media/lighthouse.jpg)
 
 
+- Testing Process
+
+    During the development of Cafe Soul Website, I paid close attention to the quality of the site. The testing process involved the following steps:
+
+    - **Functionality Testing**: I thoroughly tested all core features of the website, such as menu display, appointment booking, and contact form submission.
+
+    - **Compatibility Testing**: I verified the compatibility of the website across multiple web browsers (Chrome, Firefox, Safari) and various devices (desktop and mobile).
+
+    - **Responsiveness Testing**: The website was rigorously tested for responsiveness on different screen sizes to ensure a seamless experience for all users.
+
+    - **Performance Testing**: Performance analysis tools, including Lighthouse, were used to optimize loading times and resource usage.
+
+    - **Security Testing**: Security measures were implemented, including protection against common web vulnerabilities.
+
+    
+
+    The testing process was an iterative one, and multiple rounds of testing were conducted throughout the development. Any identified issues and bugs were promptly addressed to maintain the website's quality.
+
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+- Django (Python Web Framework)
+- PostgreSQL (Database)
+
+## Django administration login
+
+- username: nero26
+- password: dublin123
+
+
+## Debug
+
+Debugging is an essential part of working with Cafe Soul. While we strive to create a smooth user experience, issues may arise from time to time. here are some steps took  diagnose and resolve issues:
+
+1. **Check Documentation**: Refer to the project's documentation or user guide for information on how to use and configure different features of Cafe Soul.
+
+2. **Inspect Error Messages**: whenever issues encounter, addressed them and resolved.
+
+3. **Review Code**: reviews the code to correct typos and other errors.
+
+4. **Use Debugging Tools**: avaible debugging tools are used to resolved errors.
+
+5. **Check Dependencies**: Checked all dependencies and function during website building process
+
+6. **Search Issue Tracker**: Used issue tracker to find potential bugs.
+
+7. **Community Support**: Took help from slack coomunity to resolve error during website building time.
+
+
+
+## Additional Notes or Future Improvements
+    
+- During the project development, I observed that users were particularly interested in the menu section, spending an average of 3 minutes browsing the available items. This   suggests that the menu plays a central role in user engagement.
+
+- While the current version of Cafe Soul Website is functional and user-friendly, there are several areas that could be improved. We plan to focus on enhancing the user interface to provide a more visually appealing and intuitive experience.
+
+- In the future, we plan to implement a user registration and login system, allowing customers to create accounts, save their favorite menu items, and place orders directly from the website. This will enhance user engagement and convenience.
+
+- I have identified opportunities to optimize the loading speed of the website, especially for images and dynamic content. Implementing these optimizations will lead to faster page load times and improved user satisfaction.
+
+
+
+## Deployment
+
+
+- This pages are deployed in git heroku and published.
+- site link : https://cafe-booking-4d8e2d880209.herokuapp.com/
+
+
+
+## Credits
+
+
+- This pages html, css, js, python etc codes are inspired from I THINK THERFORE I BLOG project.
+- Photos are received from unsplash and google images. 
+- Special thanks to my mentor Rahul Lakhanpal for mentoring me during this project.
 

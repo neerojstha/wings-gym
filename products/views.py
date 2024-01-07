@@ -20,7 +20,14 @@ class PostDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        return render(request, "post_detail.html", {"post": post})
+
+        return render(
+            request,
+            "post_detail.html",
+            {
+                "post": post,
+            },
+        )
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
