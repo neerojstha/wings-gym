@@ -182,7 +182,7 @@ Debugging is an essential part of working with Cafe Soul. While we strive to cre
 ## Credits
 
 
-- This pages html, css, js, python etc codes are inspired from I THINK THERFORE I BLOG project.
+- This pages html, css, js, python etc codes are inspired from Boutique Ado project.
 - Photos are received from unsplash and google images. 
 - Special thanks to my mentor Rahul Lakhanpal for mentoring me during this project.
 
