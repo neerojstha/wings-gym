@@ -161,13 +161,15 @@ Debugging is an essential part of working with Cafe Soul. While we strive to cre
 
 ## Additional Notes or Future Improvements
     
-- During the project development, I observed that users were particularly interested in the menu section, spending an average of 3 minutes browsing the available items. This   suggests that the menu plays a central role in user engagement.
+- Create a member forum or social platform for members to share experiences, challenges, and organize group activities.
 
-- While the current version of Cafe Soul Website is functional and user-friendly, there are several areas that could be improved. We plan to focus on enhancing the user interface to provide a more visually appealing and intuitive experience.
+- Implement a 'Workout Buddy' system to connect members with similar fitness goals.
 
-- In the future, we plan to implement a user registration and login system, allowing customers to create accounts, save their favorite menu items, and place orders directly from the website. This will enhance user engagement and convenience.
+- Offer app-exclusive features like barcode entry to the gym, push notifications for class reminders, and workout tracking..
 
-- I have identified opportunities to optimize the loading speed of the website, especially for images and dynamic content. Implementing these optimizations will lead to faster page load times and improved user satisfaction.
+- Offer live-streamed classes for members who can't make it to the gym.
+
+- Integrate AI chatbots for 24/7 basic customer service inquiries.
 
 
 
