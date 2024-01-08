@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.template.loader import render_to_string
 from django.conf import settings
-
+from django.core.mail import send_mail
 from .models import Order, OrderLineItem
 from products.models import Product
 
@@ -90,7 +90,7 @@ class StripeWH_Handler:
                     street_address2__iexact=shipping_details.address.line2,
                     county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
-                    original_bag=cart,
+                    original_cart=cart,
                     stripe_pid=pid,
                 )
                 order_exists = True
