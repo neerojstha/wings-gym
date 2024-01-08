@@ -72,7 +72,7 @@ User can signout from the page.
 
 - Stripe payment
 User can see payment on stripe dashboard.
-![Alt Text](media/stripepayment.jpg)
+![Alt Text](media/stripegym.jpg)
 
 
 ## Demo
