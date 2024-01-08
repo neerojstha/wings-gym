@@ -74,6 +74,11 @@ User can signout from the page.
 User can see payment on stripe dashboard.
 ![Alt Text](media/stripegym.jpg)
 
+## Web Marketing
+![Facebook Image](media/fabebook.jpg)
+Embrace the power of social media with Wings Gym's innovative web marketing strategy. Connect with us on Facebook to stay updated on the latest fitness trends, tips, and gym updates. Join our vibrant community and take your fitness journey to new heights!
+
+
 
 ## Demo
 
