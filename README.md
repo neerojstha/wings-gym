@@ -60,31 +60,21 @@ Whether you're a beginner or a seasoned athlete, Wings Gym is your destination f
 
 - Signup
 user need signup account to modify, view and delete booking.
-![Alt Text](media/signup.jpg)
+![Alt Text](media/signupgym.jpg)
 
 - Signin
 User can view, modify and delete booking after signin.
-![Alt Text](media/signin.jpg)
+![Alt Text](media/signingym.jpg)
 
-- Create Booking
-User can create a booking directly through by clicking nav button without login.
-![Alt Text](media/createbooking.jpg)
+- Signout
+User can signout from the page.
+![Alt Text](media/signoutgym.jpg)
 
-- Edit Booking
-User can edit booking according user need just to login website with username and password.
-![Alt Text](media/usereditbooking.jpg)
+- Stripe payment
+User can see payment on stripe dashboard.
+![Alt Text](media/stripepayment.jpg)
 
-- Delete Booking
-User can delete booking after login website.
-![Alt Text](media/deletebooking.jpg)
 
-- No Booking
-After log in if user don't have booking, system will shows no booking on the screen.
-![Alt Text](media/nobooking.jpg)
-
--Superuser
-Admin or superuser can create, read, edit and delete booking after login. Superuser can see all the booking list after clciking your booking nav button and can modify according to customer request.
-![Alt Text](media/superuseredit.jpg)
 ## Demo
 
 A live demo of the Cafe Soul Website is available at https://cafe-booking-4d8e2d880209.herokuapp.com/.
