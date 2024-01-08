@@ -177,7 +177,7 @@ Debugging is an essential part of working with Cafe Soul. While we strive to cre
 
 
 - This pages are deployed in git heroku and published.
-- site link : https://cafe-booking-4d8e2d880209.herokuapp.com/
+- site link : https://wingsgym-20a4a87d8885.herokuapp.com/
 
 
 
