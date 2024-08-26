@@ -5,6 +5,9 @@ from django.contrib.auth.models import User
 STATUS = ((0, 'Draft'), (1, 'Published'))
 
 class Post(models.Model):
+    CATEGORY_CHOICES = (
+        ('gym', 'classes'),
+    )
     title = models.CharField(max_length=210, unique=True)
     slug = models.SlugField(max_length=210, unique=True)
     excerpt = models.TextField(blank=True)
